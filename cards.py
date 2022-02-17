@@ -8,15 +8,15 @@ class Card:
         self.value = value
 
     def show(self):
-        print(f"{self.value} of {self.type}")
+        return f"{self.value} {self.type}"
 
 
 class Deck:
 
     def __init__(self):
         self.cards = []
-        self.possible_types = ["Hearts", "Diamonds", "Spades", "Clubs"]
-        # method build deck called when creating object
+        # self.possible_types = ["Hearts", "Diamonds", "Spades", "Clubs"]
+        self.possible_types = ["♥", "♦", "♠", "♣"]
         self.build_deck()
 
     def build_deck(self):
